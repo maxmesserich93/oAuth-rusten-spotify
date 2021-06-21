@@ -3,7 +3,7 @@
 use crate::oauth::{acquire_access_token};
 use crate::playback_mananger::PlaybackManager;
 use crate::server::websocket;
-use crate::spotify_client::TokenManager;
+use crate::token_manager::TokenManager;
 
 mod authorization_code_callback;
 mod constants;
@@ -11,7 +11,7 @@ mod models;
 mod oauth;
 mod playback_mananger;
 mod server;
-mod spotify_client;
+mod token_manager;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
